@@ -1,2 +1,2 @@
 # All_Mysql
-Sintaxis de las principales funciones en MySql 
+Sintaxis de las sentencias en MySql 
