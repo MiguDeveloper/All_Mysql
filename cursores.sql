@@ -31,14 +31,14 @@ BEGIN
   DECLARE no_more_rows BOOLEAN DEFAULT false;
   DECLARE v_col1 INT;
   DECLARE v_col2 INT;
-  DECLARE cursor1 CURSOR FOR
+  DECLARE cursor1 CURSOR FOR        -- Declaramos el primer cursor
     SELECT col1 FROM table;
 
-  DECLARE cursor2 CURSOR FOR
+  DECLARE cursor2 CURSOR FOR        -- Declaramos el segundo cursor
     SELECT col2 FROM table2;
 
   DECLARE CONTINUE HANDLER FOR NOT FOUND
-    SET v_done := true;
+    SET v_done := true;                     -- Importante solo usar una y ponerla en cero luego de terminar un loop
 
   OPEN cursor1;
   LOOP1: LOOP
