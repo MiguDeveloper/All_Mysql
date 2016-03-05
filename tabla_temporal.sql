@@ -1,8 +1,11 @@
-
+/*
+ * Una tabla temporal es una fotografía instantánea y estática de alguna parte de la base de datos, tomada cuando se ejecuta
+ * su instrucción select de definición de SQL
+*/
 DELIMITER $$
 CREATE PROCEDURE SP_DE_IMPRESION(
 	XID_EMPRESA INT,
-  XDOCUMENTO_VENTA_ID INT 
+  XDOCUMENTO_VENTA_ID INT
 )
 BEGIN
 
